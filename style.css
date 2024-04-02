@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+
+#First-section{
+    width: 100%;
+    height: 600px;
+   
+}
+.main{
+    overflow: hidden;
+}
+
+.main h1{
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 180px;
+    position: relative;
+    bottom: 50px;
+    right:100px;
+    z-index: -1;
+    
+}
+
+.circle{
+    width: 600px;
+    height: 600px;
+    border: 0px solid red;
+    border-radius: 0px 40% 40% 0%;
+   background-image: url(images/hawamahal.jpeg );
+   background-size: cover;
+   background-position: bottom center;
+   box-shadow: 10px 10px 20px black;
+   float: left;
+}
+
+
+#navbar{
+    width: 600px;
+    /* border: 1px solid red; */
+    height: 60px;
+    float: left;
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 70px;
+}
+#navbar a{
+    font-size: 24px;
+    color: black;
+    position: relative;
+
+}
+.navbar-menu li a::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+    background-color: #ff5f15;
+    top: 30px;
+    
+}
+.navbar-menu a:hover{
+    color: #ff5f15;
+}
+.navbar-menu li a:hover:after{
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    right: auto;
+}
+
+#navbar a:hover{
+    color: #FF5F15	;
+    /* text-decoration: underline; */
+}
+.navbar-menu{
+    display: flex;
+   gap: 30px;
+}
+.orange-circle{
+    width: 150px;
+    height: 200px;
+    background: url(images/pngtree-beautiful-hindu-mandala-art-png-image_8930995.png);
+    background-size: cover;
+    /* border: 1px solid greenyellow; */
+
+    float: right;
+    background-position: bottom left 50px ;
+    background-repeat: no-repeat;
+    
+}
+.text{
+    width: 500px;
+    height: 200px;
+    /* border: 1px solid black; */
+    float: left;
+    /* margin-top: 100px; */
+    transition: 1s;
+}
+.text i{
+    /* margin-left: 50px; */
+    color: #FF5F15;
+    font-size: 30px;
+    
+
+}
+
+.text h2{
+    color: black;
+    font-size: 52px;
+    margin-left: 50px;
+    transform: translate(0);
+    transition: 0.5s;
+    
+}
+.text h2:hover{
+    transform: translateX(20px);
+}
+
+.text p{
+    color: gray;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#second-section{
+    width: 100%;
+    height: 650px;
+}
+
+.second-main{
+    width: 100%;
+
+    
+}
+.destination{
+    width: 100%;
+    height: 150px;
+    margin-top: 60px;
+    background-color: rgba(255, 95, 21, 0.1);
+    color: black;
+    font-size: 50px;
+    padding-left: 100px;
+  
+    
+}
+
+.explore{
+    width: 30%;
+    height: 50px;
+    color: #ff5f15;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+
+
+.orange-circle1{
+    width: 150px;
+    height: 200px;
+    background: url(images//pngtree-beautiful-hindu-mandala-art-png-image_8930995.png);
+    background-size: cover;
+    /* border: 1px solid greenyellow; */
+
+    float: left;
+    background-position: bottom left 50px ;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.first-row{
+    width: 1000px;
+    height: 400px;
+    /* background-color: green; */
+    float: right;
+    margin-top: -150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.first-image{
+    width: 300px;
+    height: 350px;
+    background-color: blue;
+    /* background: url(jaigarh\ fort.jpeg) no-repeat ; */
+    background-size: cover;
+    box-shadow: 5px 5px 8px black;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 5px;
+    margin-right: 20px;
+    
+}
+.first-image img{
+    transition: 1s;
+   
+   
+}
+.historical{
+    width:315px ;
+    height: 100px;
+    background-color: #FF5F15;
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    font-size: 12px;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    transition: 1s;
+    
+}
+.historical h4{
+
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.first-image:hover .historical{
+    transform: translateY(20%);
+    /* transform: scale(0); */
+
+}
+.first-image:hover img{
+    transform: scale(1.2);
+}
+#third-section{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+
+}
+.nahargarh-box{
+    width: 75%;
+    height: 450px;
+    background-color: rgba(255, 95, 21, 0.1);
+    display: flex;
+}
+.nahargarh-image{
+    width: 500px;
+    height: 450px ;
+    /* background-color: hotpink; */
+    position: relative;
+    overflow: hidden;
+}
+.nahargarh-circle{
+    width:500px ;
+    height: 500px;
+    /* border: 1px solid black; */
+    background: url(images/nahargarh\ fort.avif) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    /* margin-top: 50px; */
+    position: absolute;
+    top: 20px;
+    right: 0px;
+   
+
+}
+.nahargarh-text{
+    width: 550px;
+    height: 450px;
+    /* background-color: lavender; */
+}
+.aboutus{
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: aqua; */
+    color: #FF5F15;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.content{
+    width: 100%;
+    padding-left: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+.paragraph{
+    width: 100%;
+    font-size: 12px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.button{
+    padding-left: 30px;
+}
+.button button{
+    width: 150px;
+    height: 50px;
+    background-color: #FF5F15;
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+    transition: 1s;
+    font-size: 18px;
+    cursor: pointer;
+    
+
+}
+.button:hover button{
+    background-color: black;
+    color: #FF5F15;
+    
+}
+#fourthsection{
+    width: 100%;
+    height: 2200px;
+}
+.gallery{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 95, 21, 0.1);
+    color: black;
+    text-align: center;
+    /* margin-top: 100px; */
+    padding-top: 21px;
+    font-size: 30px;
+    
+}
+
+.gallery-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.gallery-section img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    
+
+}
+.gallery-section > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+  
+}
+.gallery-section > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    transition: 1s;
+   
+  
+}
+
+.gallery-section div:hover img{
+    transform: scale(1.2);
+    
+}
+
+
+.gallery-section .wide{
+    grid-column: span 2;
+}
+.gallery-section .tall{
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.gallery-section .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.traditional-circle{
+    width: 250px;
+    height: 250px;
+    /* border: 5px solid red; */
+    position: relative;
+    top: 0;
+    left: 91%;
+    margin-top: -100px;
+   
+}
+.orange-circle2{
+    width: 200px;
+    height: 200px;
+    background: url(images/pngtree-beautiful-hindu-mandala-art-png-image_8930995.png);
+    background-size: cover;
+    /* border: 5px solid greenyellow; */
+
+    float: right;
+    /* background-position: bottom left 50px ; */
+    background-repeat: no-repeat;
+    
+    animation: round  10s infinite  linear;
+    transform-origin: center center;
+}
+@keyframes round {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+
+    
+}
+
+.traditional-circle1{
+    width: 250px;
+    height: 250px;
+    /* border: 5px solid red; */
+    position: relative;
+    top: 0;
+    left: -150px;
+    z-index: 2;
+    
+}
+.orange-circle4{
+    width: 200px;
+    height: 200px;
+    background: url(images/pngtree-beautiful-hindu-mandala-art-png-image_8930995.png);
+    background-size: cover;
+    /* border: 5px solid greenyellow; */
+
+    float: right;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    /* background-position: bottom left 50px ; */
+    background-repeat: no-repeat;
+    
+    animation: round  10s infinite  linear;
+    transform-origin: center center;
+
+}
+
+#fifth{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+   
+
+}
+
+.fifthsection{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    transform: translatey(-150px);
+  
+
+}
+.bacground{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-503px);
+    padding: 100px;
+    
+}
+.newsletter{
+    width: 800px;
+    height: 300px;
+    /* background-color: black; */
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+    
+    
+    
+}
+.newsletter input{
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.newsleetersection{
+    width: 60%;
+    height: 100px;
+    background-color: rgba(255, 95, 21, 0.1);
+    color: black;
+    text-align: center;
+    /* margin-top: 100px; */
+    padding-top: 21px;
+    float: right;
+    font-size: 30px;
+    transform: translateY(-180px);
+}
+.travel{
+    width: 1100px;
+    height: 270px;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 180px;
+   float: right;
+   transform: translateY(-300px) translateX(50px);
+  
+   overflow: hidden;
+    
+}
+#sixth{
+    width: 100%;
+    height: 400px;
+    
+}
+.abc{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+    
+
+   
+}
+
+.a{
+    width: 32%;
+    height: 400px;
+    /* background-color: aqua; */
+   margin-left: 10px;
+    float: left;
+    padding: 30px;
+}
+
+.follow{
+    width: 300px;
+    height: 70px;
+    padding: 20px;
+    /* background-color: black; */
+    font-size: 28px;
+    font-style: italic;
+    color: #FF5F15;
+
+}
+.social{
+    width: 300px;
+    height: 100px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social img{
+    border-radius: 5px;
+    
+}
+.camel{
+   margin-top: -50px;
+    margin-left: 180px;
+}
+.follow p{
+    color: white;
+    font-size: 18px;
+}
+.fb{
+    width: 50px; 
+    height: 50px;
+    background-color: #FF5F15;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fb:hover{
+    background-color: white;
+}
+.follow a{
+    color: white;
+}
+.follow a:hover{
+    color: #FF5F15;
+}
+#seventh{
+    width: 100%;
+    height: 30px;
+}
+.copyright{
+    width: 100%;
+    height: 30px;
+    background-color:#FF5F15;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    
+}
